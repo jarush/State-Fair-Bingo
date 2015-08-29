@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		684874ED1B913234001CA366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684874EC1B913234001CA366 /* main.m */; };
+		684874F01B913234001CA366 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684874EF1B913234001CA366 /* AppDelegate.m */; };
+		684874F31B913234001CA366 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684874F21B913234001CA366 /* ViewController.m */; };
+		684874F61B913234001CA366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684874F41B913234001CA366 /* Main.storyboard */; };
+		684874F81B913234001CA366 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684874F71B913234001CA366 /* Images.xcassets */; };
+		684874FB1B913234001CA366 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684874F91B913234001CA366 /* LaunchScreen.xib */; };
+		684875071B913234001CA366 /* State_Fair_BingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684875061B913234001CA366 /* State_Fair_BingoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		684875011B913234001CA366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684874DF1B913234001CA366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684874E61B913234001CA366;
+			remoteInfo = "State Fair Bingo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		684874E71B913234001CA366 /* State Fair Bingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "State Fair Bingo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		684874EB1B913234001CA366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684874EC1B913234001CA366 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		684874EE1B913234001CA366 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		684874EF1B913234001CA366 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		684874F11B913234001CA366 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		684874F21B913234001CA366 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		684874F51B913234001CA366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		684874F71B913234001CA366 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		684874FA1B913234001CA366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		684875001B913234001CA366 /* State Fair BingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "State Fair BingoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		684875051B913234001CA366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684875061B913234001CA366 /* State_Fair_BingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State_Fair_BingoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		684874E41B913234001CA366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684874FD1B913234001CA366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		684874DE1B913234001CA366 = {
+			isa = PBXGroup;
+			children = (
+				684874E91B913234001CA366 /* State Fair Bingo */,
+				684875031B913234001CA366 /* State Fair BingoTests */,
+				684874E81B913234001CA366 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		684874E81B913234001CA366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				684874E71B913234001CA366 /* State Fair Bingo.app */,
+				684875001B913234001CA366 /* State Fair BingoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		684874E91B913234001CA366 /* State Fair Bingo */ = {
+			isa = PBXGroup;
+			children = (
+				684874EE1B913234001CA366 /* AppDelegate.h */,
+				684874EF1B913234001CA366 /* AppDelegate.m */,
+				684874F11B913234001CA366 /* ViewController.h */,
+				684874F21B913234001CA366 /* ViewController.m */,
+				684874F41B913234001CA366 /* Main.storyboard */,
+				684874F71B913234001CA366 /* Images.xcassets */,
+				684874F91B913234001CA366 /* LaunchScreen.xib */,
+				684874EA1B913234001CA366 /* Supporting Files */,
+			);
+			path = "State Fair Bingo";
+			sourceTree = "<group>";
+		};
+		684874EA1B913234001CA366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				684874EB1B913234001CA366 /* Info.plist */,
+				684874EC1B913234001CA366 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		684875031B913234001CA366 /* State Fair BingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				684875061B913234001CA366 /* State_Fair_BingoTests.m */,
+				684875041B913234001CA366 /* Supporting Files */,
+			);
+			path = "State Fair BingoTests";
+			sourceTree = "<group>";
+		};
+		684875041B913234001CA366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				684875051B913234001CA366 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		684874E61B913234001CA366 /* State Fair Bingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6848750A1B913234001CA366 /* Build configuration list for PBXNativeTarget "State Fair Bingo" */;
+			buildPhases = (
+				684874E31B913234001CA366 /* Sources */,
+				684874E41B913234001CA366 /* Frameworks */,
+				684874E51B913234001CA366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "State Fair Bingo";
+			productName = "State Fair Bingo";
+			productReference = 684874E71B913234001CA366 /* State Fair Bingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		684874FF1B913234001CA366 /* State Fair BingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6848750D1B913234001CA366 /* Build configuration list for PBXNativeTarget "State Fair BingoTests" */;
+			buildPhases = (
+				684874FC1B913234001CA366 /* Sources */,
+				684874FD1B913234001CA366 /* Frameworks */,
+				684874FE1B913234001CA366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				684875021B913234001CA366 /* PBXTargetDependency */,
+			);
+			name = "State Fair BingoTests";
+			productName = "State Fair BingoTests";
+			productReference = 684875001B913234001CA366 /* State Fair BingoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		684874DF1B913234001CA366 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Jason Rush";
+				TargetAttributes = {
+					684874E61B913234001CA366 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					684874FF1B913234001CA366 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 684874E61B913234001CA366;
+					};
+				};
+			};
+			buildConfigurationList = 684874E21B913234001CA366 /* Build configuration list for PBXProject "State Fair Bingo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 684874DE1B913234001CA366;
+			productRefGroup = 684874E81B913234001CA366 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				684874E61B913234001CA366 /* State Fair Bingo */,
+				684874FF1B913234001CA366 /* State Fair BingoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		684874E51B913234001CA366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684874F61B913234001CA366 /* Main.storyboard in Resources */,
+				684874FB1B913234001CA366 /* LaunchScreen.xib in Resources */,
+				684874F81B913234001CA366 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684874FE1B913234001CA366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		684874E31B913234001CA366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684874F31B913234001CA366 /* ViewController.m in Sources */,
+				684874F01B913234001CA366 /* AppDelegate.m in Sources */,
+				684874ED1B913234001CA366 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684874FC1B913234001CA366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684875071B913234001CA366 /* State_Fair_BingoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		684875021B913234001CA366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684874E61B913234001CA366 /* State Fair Bingo */;
+			targetProxy = 684875011B913234001CA366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		684874F41B913234001CA366 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684874F51B913234001CA366 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		684874F91B913234001CA366 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684874FA1B913234001CA366 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		684875081B913234001CA366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		684875091B913234001CA366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6848750B1B913234001CA366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "State Fair Bingo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6848750C1B913234001CA366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "State Fair Bingo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6848750E1B913234001CA366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "State Fair BingoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/State Fair Bingo.app/State Fair Bingo";
+			};
+			name = Debug;
+		};
+		6848750F1B913234001CA366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "State Fair BingoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/State Fair Bingo.app/State Fair Bingo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		684874E21B913234001CA366 /* Build configuration list for PBXProject "State Fair Bingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684875081B913234001CA366 /* Debug */,
+				684875091B913234001CA366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6848750A1B913234001CA366 /* Build configuration list for PBXNativeTarget "State Fair Bingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6848750B1B913234001CA366 /* Debug */,
+				6848750C1B913234001CA366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6848750D1B913234001CA366 /* Build configuration list for PBXNativeTarget "State Fair BingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6848750E1B913234001CA366 /* Debug */,
+				6848750F1B913234001CA366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 684874DF1B913234001CA366 /* Project object */;
+}
