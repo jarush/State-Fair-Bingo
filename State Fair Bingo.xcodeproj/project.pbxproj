@@ -11,7 +11,6 @@
 		684874ED1B913234001CA366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684874EC1B913234001CA366 /* main.m */; };
 		684874F01B913234001CA366 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684874EF1B913234001CA366 /* AppDelegate.m */; };
 		684874F81B913234001CA366 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684874F71B913234001CA366 /* Images.xcassets */; };
-		684874FB1B913234001CA366 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684874F91B913234001CA366 /* LaunchScreen.xib */; };
 		684875151B914EE1001CA366 /* BingoCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684875141B914EE1001CA366 /* BingoCardViewController.m */; };
 		684875181B9155AA001CA366 /* SquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 684875171B9155AA001CA366 /* SquareCell.m */; };
 		6848751A1B9204DD001CA366 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 684875191B9204DD001CA366 /* Square.m */; };
@@ -28,7 +27,6 @@
 		684874EE1B913234001CA366 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		684874EF1B913234001CA366 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		684874F71B913234001CA366 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		684874FA1B913234001CA366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		684875131B914EE1001CA366 /* BingoCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingoCardViewController.h; sourceTree = "<group>"; };
 		684875141B914EE1001CA366 /* BingoCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingoCardViewController.m; sourceTree = "<group>"; };
 		684875161B9155AA001CA366 /* SquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareCell.h; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				684874EC1B913234001CA366 /* main.m */,
 				6848751C1B9206EA001CA366 /* cards.plist */,
 				684874F71B913234001CA366 /* Images.xcassets */,
-				684874F91B913234001CA366 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6848751D1B9206EA001CA366 /* cards.plist in Resources */,
-				684874FB1B913234001CA366 /* LaunchScreen.xib in Resources */,
 				684874F81B913234001CA366 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,17 +176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		684874F91B913234001CA366 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				684874FA1B913234001CA366 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		684875081B913234001CA366 /* Debug */ = {
