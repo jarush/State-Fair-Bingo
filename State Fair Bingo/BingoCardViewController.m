@@ -17,10 +17,6 @@
 #define NUM_COLS    5
 #define NUM_SQUARES (NUM_ROWS * NUM_COLS)
 
-@interface BingoCardViewController ()
-
-@end
-
 @implementation BingoCardViewController
 
 static NSString * const kHeaderReuseIdentifier = @"HeaderView";
