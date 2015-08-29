@@ -43,6 +43,18 @@
     [self saveCurrentGame:self.bingoViewController.squares];
 }
 
++ (AppDelegate *)appDelegate {
+    return [[UIApplication sharedApplication] delegate];
+}
+
+- (NSArray *)loadCardNames {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    return [[dict allKeys] sortedArrayUsingComparator: ^(id obj1, id obj2) {
+        return [(NSString *)obj1 compare:(NSString *)obj2];
+    }];
+}
+
 - (NSArray *)loadCardWithName:(NSString *)name {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];

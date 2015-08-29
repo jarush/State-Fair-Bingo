@@ -7,6 +7,8 @@
 //
 
 #import "BingoCardViewController.h"
+#import "SelectCardViewController.h"
+#import "AppDelegate.h"
 #import "HeaderView.h"
 #import "SquareCell.h"
 #import "Square.h"
@@ -28,6 +30,8 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     self = [super initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
     if (self) {
         self.title = @"Bingo!";
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(selectCard)];
 
         self.collectionView.backgroundColor = [UIColor whiteColor];
         self.collectionView.allowsMultipleSelection = YES;
@@ -39,13 +43,28 @@ static NSString * const kCellReuseIdentifier = @"Cell";
         CGFloat headerSize = (self.collectionView.bounds.size.height - (squareSize * 5)) / 2.0f;
         ((UICollectionViewFlowLayout *)self.collectionViewLayout).headerReferenceSize = CGSizeMake(0, headerSize);
 
-        self.squareStampedColor = [UIColor colorWithRed:34/255.0f green:189/255.0f blue:34/255.0f alpha:1.0f];
-        self.squares = squares;
-
-        // Make sure the free cell is selected
-        ((Square *)self.squares[12]).selected = YES;
+        _squareStampedColor = [UIColor colorWithRed:34/255.0f green:189/255.0f blue:34/255.0f alpha:1.0f];
+        _squares = squares;
     }
     return self;
+}
+
+- (void)setSquares:(NSArray *)squares {
+    _squares = squares;
+
+    // Make sure the free cell is selected
+    ((Square *)_squares[12]).selected = YES;
+
+    [self.collectionView reloadData];
+}
+
+- (void)selectCard {
+    SelectCardViewController *selectCardViewController = [[SelectCardViewController alloc] initWithStyle:UITableViewStylePlain];
+    selectCardViewController.bingoCardViewController = self;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:selectCardViewController];
+    
+    [self.navigationController presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (BOOL)checkColumns {

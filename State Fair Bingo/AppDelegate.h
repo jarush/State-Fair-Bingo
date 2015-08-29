@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (AppDelegate *)appDelegate;
+- (NSArray *)loadCardNames;
+- (NSArray *)loadCardWithName:(NSString *)name;
 
 @end
 

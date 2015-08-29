@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681DF8D81B922C1C0060027B /* SelectCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681DF8D71B922C1C0060027B /* SelectCardViewController.m */; };
 		684874ED1B913234001CA366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684874EC1B913234001CA366 /* main.m */; };
 		684874F01B913234001CA366 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684874EF1B913234001CA366 /* AppDelegate.m */; };
 		684874F81B913234001CA366 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684874F71B913234001CA366 /* Images.xcassets */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		681DF8D61B922C1C0060027B /* SelectCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCardViewController.h; sourceTree = "<group>"; };
+		681DF8D71B922C1C0060027B /* SelectCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCardViewController.m; sourceTree = "<group>"; };
 		684874E71B913234001CA366 /* State Fair Bingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "State Fair Bingo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		684874EB1B913234001CA366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684874EC1B913234001CA366 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				684875141B914EE1001CA366 /* BingoCardViewController.m */,
 				6848751E1B9218B1001CA366 /* HeaderView.h */,
 				6848751F1B9218B1001CA366 /* HeaderView.m */,
+				681DF8D61B922C1C0060027B /* SelectCardViewController.h */,
+				681DF8D71B922C1C0060027B /* SelectCardViewController.m */,
 				6848751B1B9204FA001CA366 /* Square.h */,
 				684875191B9204DD001CA366 /* Square.m */,
 				684875161B9155AA001CA366 /* SquareCell.h */,
@@ -166,6 +171,7 @@
 			files = (
 				684875181B9155AA001CA366 /* SquareCell.m in Sources */,
 				684875201B9218B1001CA366 /* HeaderView.m in Sources */,
+				681DF8D81B922C1C0060027B /* SelectCardViewController.m in Sources */,
 				684875151B914EE1001CA366 /* BingoCardViewController.m in Sources */,
 				6848751A1B9204DD001CA366 /* Square.m in Sources */,
 				684874F01B913234001CA366 /* AppDelegate.m in Sources */,
@@ -310,6 +316,7 @@
 				6848750C1B913234001CA366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
