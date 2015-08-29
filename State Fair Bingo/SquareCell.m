@@ -21,6 +21,7 @@
 
         CGRect labelFrame = CGRectInset(self.bounds, 2, 2);
         self.label = [[UILabel alloc] initWithFrame:labelFrame];
+        self.label.backgroundColor = [UIColor clearColor];
         self.label.font = [UIFont systemFontOfSize:10.0f];
         self.label.text = @"This is a Test";
         self.label.textAlignment = NSTextAlignmentCenter;

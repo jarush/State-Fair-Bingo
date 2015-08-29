@@ -28,7 +28,9 @@ static NSString * const kHeaderReuseIdentifier = @"HeaderView";
 static NSString * const kCellReuseIdentifier = @"Cell";
 
 - (instancetype)init {
-    self = [super initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    
+    self = [super initWithCollectionViewLayout:layout];
     if (self) {
         self.title = @"Bingo!";
         
@@ -42,7 +44,7 @@ static NSString * const kCellReuseIdentifier = @"Cell";
 
         CGFloat squareSize = self.collectionView.bounds.size.width / NUM_ROWS;
         CGFloat headerSize = (self.collectionView.bounds.size.height - (squareSize * 5)) / 2.0f;
-        ((UICollectionViewFlowLayout *)self.collectionViewLayout).headerReferenceSize = CGSizeMake(0, headerSize);
+layout.headerReferenceSize = CGSizeMake(0, headerSize);
 
         _squareStampedColor = [UIColor colorWithRed:34/255.0f green:189/255.0f blue:34/255.0f alpha:1.0f];
     }
