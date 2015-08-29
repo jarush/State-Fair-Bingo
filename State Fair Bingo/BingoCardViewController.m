@@ -11,9 +11,9 @@
 #import "SquareCell.h"
 #import "Square.h"
 
-#define NUM_SQUARES_ROW 5
-#define NUM_SQUARES_COL 5
-#define NUM_SQUARES     (NUM_SQUARES_ROW * NUM_SQUARES_COL)
+#define NUM_ROWS    5
+#define NUM_COLS    5
+#define NUM_SQUARES (NUM_ROWS * NUM_COLS)
 
 @interface BingoCardViewController ()
 
@@ -35,7 +35,7 @@ static NSString * const kCellReuseIdentifier = @"Cell";
         [self.collectionView registerClass:[SquareCell class] forCellWithReuseIdentifier:kCellReuseIdentifier];
         [self.collectionView registerClass:[HeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kHeaderReuseIdentifier];
 
-        CGFloat squareSize = self.collectionView.bounds.size.width / NUM_SQUARES_ROW;
+        CGFloat squareSize = self.collectionView.bounds.size.width / NUM_ROWS;
         CGFloat headerSize = (self.collectionView.bounds.size.height - (squareSize * 5)) / 2.0f;
         ((UICollectionViewFlowLayout *)self.collectionViewLayout).headerReferenceSize = CGSizeMake(0, headerSize);
 
@@ -46,6 +46,66 @@ static NSString * const kCellReuseIdentifier = @"Cell";
         ((Square *)self.squares[12]).selected = YES;
     }
     return self;
+}
+
+- (BOOL)checkColumns {
+    for (int col = 0; col < NUM_COLS; col++) {
+        BOOL bingo = YES;
+        for (int i = col; i < NUM_SQUARES; i += NUM_COLS) {
+            bingo &= ((Square *)self.squares[i]).selected;
+        }
+        
+        if (bingo) {
+            return YES;
+        }
+    }
+    
+    return NO;
+}
+
+- (BOOL)checkRows {
+    for (int row = 0; row < NUM_ROWS; row++) {
+        BOOL bingo = YES;
+        for (int i = row * NUM_COLS; i < (row + 1) * NUM_COLS; i++) {
+            bingo &= ((Square *)self.squares[i]).selected;
+        }
+        
+        if (bingo) {
+            return YES;
+        }
+    }
+    
+    return NO;
+}
+
+- (BOOL)checkDiagonal {
+    BOOL bingo = YES;
+    for (int i = 0; i < NUM_SQUARES; i += NUM_COLS + 1) {
+        bingo &= ((Square *)self.squares[i]).selected;
+    }
+    
+    if (bingo) {
+        return YES;
+    }
+
+    bingo = YES;
+    for (int i = NUM_COLS - 1; i < NUM_SQUARES - 1; i += NUM_COLS - 1) {
+        bingo &= ((Square *)self.squares[i]).selected;
+    }
+    
+    if (bingo) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (void)checkIfWinner {
+    BOOL bingo = [self checkColumns] || [self checkRows] || [self checkDiagonal];
+    if (bingo) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Bingo!" message:nil delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil];
+        [alertView show];
+    }
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -85,7 +145,7 @@ static NSString * const kCellReuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDelegateFlowLayout>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat squareSize = self.collectionView.bounds.size.width / NUM_SQUARES_ROW;
+    CGFloat squareSize = self.collectionView.bounds.size.width / NUM_ROWS;
     return CGSizeMake(squareSize, squareSize);
 }
 
@@ -111,6 +171,8 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     
     SquareCell *squareCell = (SquareCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     squareCell.backgroundColor = self.squareStampedColor;
+    
+    [self checkIfWinner];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
