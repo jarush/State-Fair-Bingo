@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>card1</key>
+	<key>Card 1</key>
 	<array>
 		<string>Grown Man with Stuffed Animals Tied to Him</string>
 		<string>Motorized Scooter Pulling Something</string>
@@ -30,7 +30,7 @@
 		<string>Seed Art</string>
 		<string>Woman in Wedding Dress</string>
 	</array>
-	<key>card2</key>
+	<key>Card 2</key>
 	<array>
 		<string>Skull Tattoo</string>
 		<string>Passionate Makeout Session</string>
@@ -58,7 +58,7 @@
 		<string>Comb-over</string>
 		<string>Cardboard Political Fan</string>
 	</array>
-	<key>card3</key>
+	<key>Card 3</key>
 	<array>
 		<string>Barb Abney</string>
 		<string>Man with Food Stuck in Beard</string>
@@ -86,7 +86,7 @@
 		<string>Ye Old Mill</string>
 		<string>Kid Wearing Hooter&apos;s T-Shirt</string>
 	</array>
-	<key>card4</key>
+	<key>Card 4</key>
 	<array>
 		<string>Horse Poop Being Shoveled</string>
 		<string>Child Under 5 Using Cell Phone</string>

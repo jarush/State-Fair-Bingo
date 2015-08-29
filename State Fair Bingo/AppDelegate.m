@@ -10,6 +10,8 @@
 #import "BingoCardViewController.h"
 #import "Square.h"
 
+#define DEFAULT_CARD @"Card 1"
+
 @interface AppDelegate ()
 @property (nonatomic, retain) BingoCardViewController *bingoViewController;
 @end
@@ -19,10 +21,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSArray *squares = [self loadCurrentGame];
     if (squares == nil) {
-        squares = [self loadCardWithName:@"card1"];
+        squares = [self loadCardWithName:DEFAULT_CARD];
     }
     
-    self.bingoViewController = [[BingoCardViewController alloc] initWithSquares:squares];
+    self.bingoViewController = [[BingoCardViewController alloc] init];
+    self.bingoViewController.squares = squares;
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.bingoViewController];
     navigationController.navigationBar.translucent = NO;

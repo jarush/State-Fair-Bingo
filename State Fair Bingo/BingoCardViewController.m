@@ -22,7 +22,7 @@
 static NSString * const kHeaderReuseIdentifier = @"HeaderView";
 static NSString * const kCellReuseIdentifier = @"Cell";
 
-- (instancetype)initWithSquares:(NSArray *)squares {
+- (instancetype)init {
     self = [super initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
     if (self) {
         self.title = @"Bingo!";
@@ -40,7 +40,6 @@ static NSString * const kCellReuseIdentifier = @"Cell";
         ((UICollectionViewFlowLayout *)self.collectionViewLayout).headerReferenceSize = CGSizeMake(0, headerSize);
 
         _squareStampedColor = [UIColor colorWithRed:34/255.0f green:189/255.0f blue:34/255.0f alpha:1.0f];
-        _squares = squares;
     }
     return self;
 }

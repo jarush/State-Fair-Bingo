@@ -13,6 +13,4 @@
 @property (nonatomic, retain) UIColor *squareStampedColor;
 @property (nonatomic, retain) NSArray *squares;
 
-- (instancetype)initWithSquares:(NSArray *)squares;
-
 @end
