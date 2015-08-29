@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SquareCell.h
 //  State Fair Bingo
 //
 //  Created by Jason Rush on 8/28/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SquareCell : UICollectionViewCell
 
+@property UILabel *label;
 
 @end
-
