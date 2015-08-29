@@ -16,6 +16,11 @@
 #define NUM_ROWS    5
 #define NUM_COLS    5
 #define NUM_SQUARES (NUM_ROWS * NUM_COLS)
+#define FREE_SQUARE (NUM_SQUARES / 2)
+
+@interface BingoCardViewController ()
+@property (nonatomic, assign) BOOL bingo;
+@end
 
 @implementation BingoCardViewController
 
@@ -48,9 +53,20 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     _squares = squares;
 
     // Make sure the free cell is selected
-    ((Square *)_squares[12]).selected = YES;
+    ((Square *)_squares[FREE_SQUARE]).selected = YES;
 
+    // Set the current bingo state
+    self.bingo = [self checkBingo];
+
+    // Reload the collection view
     [self.collectionView reloadData];
+
+    // Restore the selected cells
+    for (int i = 0; i < NUM_SQUARES; i++) {
+        if (i != FREE_SQUARE && ((Square *)_squares[i]).selected) {
+            [self.collectionView selectItemAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0] animated:NO scrollPosition:UICollectionViewScrollPositionNone];
+        }
+    }
 }
 
 - (void)selectCard {
@@ -114,12 +130,8 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     return NO;
 }
 
-- (void)checkIfWinner {
-    BOOL bingo = [self checkColumns] || [self checkRows] || [self checkDiagonal];
-    if (bingo) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Bingo!" message:nil delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil];
-        [alertView show];
-    }
+- (BOOL)checkBingo {
+    return [self checkColumns] || [self checkRows] || [self checkDiagonal];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -173,11 +185,11 @@ static NSString * const kCellReuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDelegate>
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.row != 12;
+    return indexPath.row != FREE_SQUARE;
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.row != 12;
+    return indexPath.row != FREE_SQUARE;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -186,7 +198,13 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     SquareCell *squareCell = (SquareCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     squareCell.backgroundColor = self.squareStampedColor;
     
-    [self checkIfWinner];
+    BOOL bingo = [self checkBingo];
+    if (!self.bingo && bingo) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Bingo!" message:nil delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil];
+        [alertView show];
+    }
+    
+    self.bingo = bingo;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -194,6 +212,8 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     
     SquareCell *squareCell = (SquareCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     squareCell.backgroundColor = self.collectionView.backgroundColor;
+    
+    self.bingo = [self checkBingo];
 }
 
 @end
