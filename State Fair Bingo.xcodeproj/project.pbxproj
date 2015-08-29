@@ -82,8 +82,6 @@
 				684875191B9204DD001CA366 /* Square.m */,
 				684875161B9155AA001CA366 /* SquareCell.h */,
 				684875171B9155AA001CA366 /* SquareCell.m */,
-				684874F71B913234001CA366 /* Images.xcassets */,
-				684874F91B913234001CA366 /* LaunchScreen.xib */,
 				684874EA1B913234001CA366 /* Supporting Files */,
 			);
 			path = "State Fair Bingo";
@@ -95,6 +93,8 @@
 				684874EB1B913234001CA366 /* Info.plist */,
 				684874EC1B913234001CA366 /* main.m */,
 				6848751C1B9206EA001CA366 /* cards.plist */,
+				684874F71B913234001CA366 /* Images.xcassets */,
+				684874F91B913234001CA366 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -279,10 +279,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "State Fair Bingo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,10 +292,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "State Fair Bingo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
