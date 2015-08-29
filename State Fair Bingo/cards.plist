@@ -5,7 +5,7 @@
 	<key>card1</key>
 	<array>
 		<string>Grown Man with Stuffed Animals Tied to Him</string>
-        <string>Motorized Scooter Pulling Something</string>
+		<string>Motorized Scooter Pulling Something</string>
 		<string>Toothless Person</string>
 		<string>KFAN&apos;s Dan Cole</string>
 		<string>Giant Pumpkin</string>
@@ -29,6 +29,90 @@
 		<string>Inappropriate T-Shirt</string>
 		<string>Seed Art</string>
 		<string>Woman in Wedding Dress</string>
+	</array>
+	<key>card2</key>
+	<array>
+		<string>Skull Tattoo</string>
+		<string>Passionate Makeout Session</string>
+		<string>Triple Stroller</string>
+		<string>A Mullet</string>
+		<string>Pants Below the Butt</string>
+		<string>Bedazzled Jeans</string>
+		<string>Professional Athlete</string>
+		<string>Mustard Stained Shirt</string>
+		<string>Camel Toe</string>
+		<string>Presidential Candidate</string>
+		<string>Escaped 4-H Animal</string>
+		<string>Man Sleeping on Grass</string>
+		<string>FREE</string>
+		<string>Woman Wearing Only a Sports Bra</string>
+		<string>Couple with Hands in Each Other&apos;s Back Pockets</string>
+		<string>Hair in a Rat Tail</string>
+		<string>Al Franken</string>
+		<string>Overflowing Trash Can</string>
+		<string>Meatsauce from KFAN</string>
+		<string>Person with Painted Face</string>
+		<string>Person with a State Fair Bingo Card</string>
+		<string>Shirtless Man</string>
+		<string>Smashed Cheese Curds on Street</string>
+		<string>Comb-over</string>
+		<string>Cardboard Political Fan</string>
+	</array>
+	<key>card3</key>
+	<array>
+		<string>Barb Abney</string>
+		<string>Man with Food Stuck in Beard</string>
+		<string>Pregnant Teenager</string>
+		<string>Antique Tractor</string>
+		<string>Lactation Station</string>
+		<string>Couple Arguing</string>
+		<string>Eating Dropped Food</string>
+		<string>Overalls with No Shirt</string>
+		<string>Fanny Pack</string>
+		<string>Person Sleeping</string>
+		<string>Woman Wearing Suspenders</string>
+		<string>Cutoff Denim Shorts</string>
+		<string>FREE</string>
+		<string>Person Taking a Selfie</string>
+		<string>Mesh Shirt/ Tank Top</string>
+		<string>Vomit</string>
+		<string>Person with Multiple Yardsticks</string>
+		<string>Farm Animal Being Born</string>
+		<string>Family Dressed in Tie-Dye</string>
+		<string>Muffin Top</string>
+		<string>Someone Getting Arrested</string>
+		<string>Double-wide Motorized Scooter</string>
+		<string>Public Breast Feeding</string>
+		<string>Ye Old Mill</string>
+		<string>Kid Wearing Hooter&apos;s T-Shirt</string>
+	</array>
+	<key>card4</key>
+	<array>
+		<string>Horse Poop Being Shoveled</string>
+		<string>Child Under 5 Using Cell Phone</string>
+		<string>Person Eating in Hog Barn</string>
+		<string>Child on a Leash</string>
+		<string>Giant Pig</string>
+		<string>Sweet Corn Cob Recycling Bin</string>
+		<string>WCCO&apos;s Chris Shaffer</string>
+		<string>Shoeless Child</string>
+		<string>Front Butt</string>
+		<string>Adult in Pajamas</string>
+		<string>Keith Urban</string>
+		<string>Snow Plow</string>
+		<string>FREE</string>
+		<string>Diaper Being Changed Outside of Restroom</string>
+		<string>Overflowing Trash Can</string>
+		<string>Bounce House</string>
+		<string>Socks with Sandals</string>
+		<string>Donald Trump Look-Alike</string>
+		<string>People with Stroller &amp; No Children</string>
+		<string>Chain Saw Carving</string>
+		<string>Visible Tramp Stamp Tattoo</string>
+		<string>Wild Rice Demonstration</string>
+		<string>Child Over 5 with a Pacifier</string>
+		<string>Someone Stepping in Manure</string>
+		<string>Bob Collins</string>
 	</array>
 </dict>
 </plist>
