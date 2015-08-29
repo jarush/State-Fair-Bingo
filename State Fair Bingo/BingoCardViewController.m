@@ -42,6 +42,7 @@ static NSString * const kCellReuseIdentifier = @"Cell";
         self.squareStampedColor = [UIColor colorWithRed:34/255.0f green:189/255.0f blue:34/255.0f alpha:1.0f];
         self.squares = squares;
 
+        // Make sure the free cell is selected
         ((Square *)self.squares[12]).selected = YES;
     }
     return self;
@@ -53,7 +54,6 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     return 1;
 }
 
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return NUM_SQUARES;
 }
@@ -63,7 +63,6 @@ static NSString * const kCellReuseIdentifier = @"Cell";
     
     if (kind == UICollectionElementKindSectionHeader) {
         HeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kHeaderReuseIdentifier forIndexPath:indexPath];
-        NSLog(@"%@", NSStringFromCGRect(headerView.frame));
         reusableview = headerView;
     }
     

@@ -18,9 +18,9 @@
         imageViewFrame.origin.y = frame.size.height - 64;
 
         _imageView = [[UIImageView alloc] initWithFrame:imageViewFrame];
-        _imageView.image = [UIImage imageNamed:@"header.jpg"];
+        _imageView.image = [UIImage imageNamed:@"header"];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
-        
+
         [self addSubview:_imageView];
     }
     return self;
